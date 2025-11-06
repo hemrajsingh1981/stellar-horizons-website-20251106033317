@@ -1,0 +1,168 @@
+/*
+ * Stellar Horizons Stylesheet
+ * Author: AI Assistant
+ * Version: 1.0
+ * Description: Main stylesheet for the Stellar Horizons website.
+ */
+
+/* General Body Styles */
+body {
+  background-color: #0a0a23; /* Dark blue/black background */
+  color: white; /* White text for readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #00001a; /* Very dark blue for header */
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav a {
+  color: #ffd700; /* Gold accent for navigation links */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffff; /* Cyan accent on hover */
+}
+
+/* Main Content Area */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 26, 0.5); /* Slightly transparent dark blue for content */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+h1, h2, h3 {
+  color: #00ffff; /* Cyan for headings */
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #00001a; /* Very dark blue for footer */
+  color: #cccccc; /* Light grey for footer text */
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(rgba(0,0,26,0.7), rgba(0,0,26,0.7)), url('/images/hero-background.jpg'); /* Example background image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Mission and Team Member Sections */
+.mission, .team-member {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000033; /* Subtle separator */
+  padding-bottom: 20px;
+}
+
+.team-member img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.team-member::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 26, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #00ffff;
+  background-color: #0a0a23;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #ffd700; /* Gold button */
+  color: #0a0a23; /* Dark text on button */
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00ffff; /* Cyan on hover */
+}
